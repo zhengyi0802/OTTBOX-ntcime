@@ -1,4 +1,4 @@
-munditvime/build/
-munditvime/release/
-munditvime/debug/
+munditvime/build/*
+munditvime/release/*
+munditvime/debug/*
 
