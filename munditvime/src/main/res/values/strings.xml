@@ -37,11 +37,9 @@
     <string name="prefs_sound_title">按鍵音效</string>
     <string name="prefs_sound_key">prefs_sound</string>
 
-    <string name="title_connected_to">藍芽連結到</string>
-    <string name="title_connecting">藍芽連結中</string>
-    <string name="title_not_connected">藍芽未連結</string>
+    <string name="toast_text_tvservice_start">電視服務框架啟動</string>
+    <string name="toast_text_tvservice_not_found">電視服務框架未安裝</string>
+    <string name="toast_text_tvservice_error">電視服務框架錯誤</string>
 
-    <string name="title_advistor_text1">大躍行銷</string>
-    <string name="title_advistor_text2">購狂登場</string>
     <string name="todo">TODO</string>
 </resources>

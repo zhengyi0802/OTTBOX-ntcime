@@ -17,6 +17,9 @@
 package com.munditv.ntcime;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
@@ -28,6 +31,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
+import android.widget.Toast;
+
 /**
  * Abstract class extended by ZhuyinIME
  */
@@ -47,7 +52,7 @@ public abstract class AbstractIME extends InputMethodService implements
   private boolean isCapslock;
 
   private Handler mHandler = new Handler();
-protected abstract KeyboardSwitch createKeyboardSwitch(Context context);
+  protected abstract KeyboardSwitch createKeyboardSwitch(Context context);
   protected abstract Editor createEditor();
   protected abstract WordDictionary createWordDictionary(Context context);
   
@@ -62,7 +67,30 @@ protected abstract KeyboardSwitch createKeyboardSwitch(Context context);
     prevKeyCode = -2;
     isCapslock = false;
     orientation = getResources().getConfiguration().orientation;
+    startTVService();
   }
+
+  private void startTVService() {
+    PackageInfo packageInfo = null;
+
+    try{
+      packageInfo = getPackageManager().getPackageInfo("com.munditv.tvservice",
+              PackageManager.GET_SERVICES);
+      if(packageInfo != null) {
+        Intent mIntent = new Intent(Intent.ACTION_MAIN);
+        mIntent.setClassName("com.munditv.tvservice",
+                "com.mundirv.tvservice.TVService");
+        startService(mIntent);
+        Toast.makeText(this,R.string.toast_text_tvservice_start,Toast.LENGTH_SHORT).show();
+      } else {
+        Toast.makeText(this,R.string.toast_text_tvservice_not_found,Toast.LENGTH_SHORT).show();
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+      Toast.makeText(this,R.string.toast_text_tvservice_error,Toast.LENGTH_SHORT).show();
+    }
+  }
+
 
   @Override
   public void onDestroy() {
