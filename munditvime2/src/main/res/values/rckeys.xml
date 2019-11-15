@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rckey_back">4</integer>
+    <integer name="rckey_0">7</integer>
+    <integer name="rckey_1">8</integer>
+    <integer name="rckey_2">9</integer>
+    <integer name="rckey_3">10</integer>
+    <integer name="rckey_4">11</integer>
+    <integer name="rckey_5">12</integer>
+    <integer name="rckey_6">13</integer>
+    <integer name="rckey_7">14</integer>
+    <integer name="rckey_8">15</integer>
+    <integer name="rckey_9">16</integer>
+    <integer name="rckey_up">19</integer>
+    <integer name="rckey_down">20</integer>
+    <integer name="rckey_left">21</integer>
+    <integer name="rckey_right">22</integer>
+    <integer name="rckey_ok">23</integer>
+    <integer name="rckey_delete">67</integer>
+    <integer name="rckey_recall">75</integer>
+    <integer name="rckey_menu">82</integer>
+    <integer name="rckey_info">165</integer>
+    <integer name="rckey_help">172</integer>
+
+</resources>
