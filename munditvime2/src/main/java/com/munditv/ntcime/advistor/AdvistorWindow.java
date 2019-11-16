@@ -2,12 +2,12 @@ package com.munditv.ntcime.advistor;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,10 +18,10 @@ public class AdvistorWindow {
 
     private final static String TAG = "BluetoothStatusManager";
 
-    private final static int ADVISTOR_WINDOW_X = 800;
+    private final static int ADVISTOR_WINDOW_X = 700;
     private final static int ADVISTOR_WINDOW_Y = 400;
-    private final static int ADVISTOR_WINDOW_WIDTH = 300;
-    private final static int ADVISTOR_WINDOW_HEIGHT = 500;
+    private final static int ADVISTOR_WINDOW_WIDTH = 480;
+    private final static int ADVISTOR_WINDOW_HEIGHT = 400;
     private final static int ADVISTOR_WINDOW_GRAVITY = Gravity.TOP;
     private final static int ADVISTOR_WINDOW_FORNAT = PixelFormat.TRANSLUCENT;
     private final static int ADVISTOR_WINDOW_TYPE = WindowManager.LayoutParams.TYPE_SYSTEM_OVERLAY;
@@ -32,6 +32,10 @@ public class AdvistorWindow {
     private LinearLayout                mADVISTORFrameLayout = null;
     private LayoutInflater              mLayoutinflater = null;
     private View                        mADVISTORView = null;
+    private TextView                    mTextView2 = null;
+    private Handler                     mHandler = new Handler();
+
+    private int index = 1;
 
     public AdvistorWindow(Context context) {
         Log.d(TAG,"Constructor()");
@@ -43,6 +47,57 @@ public class AdvistorWindow {
         mParams = new WindowManager.LayoutParams();
         initialize();
     }
+
+    private final Runnable flipup = new Runnable() {
+        @Override
+        public void run() {
+            index++;
+
+            if (index == 11) {
+                index = 1;
+            }
+
+            mTextView2 = (TextView) mADVISTORView.findViewById(R.id.advistor_text2);
+
+            switch (index) {
+                case 1 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text1));
+                    break;
+                case 2 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text2));
+                    break;
+                case 3 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text3));
+                    break;
+                case 4 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text4));
+                    break;
+                case 5 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text5));
+                    break;
+                case 6 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text6));
+                    break;
+                case 7 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text7));
+                    break;
+                case 8 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text8));
+                    break;
+                case 9 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text9));
+                    break;
+                case 10 :
+                    mTextView2.setText(mContext.getString(R.string.title_advistor_text10));
+                    break;
+            }
+
+            mHandler.postDelayed(flipup,5000);
+            return;
+        }
+
+    };
+
 
     private void initialize() {
         Log.d(TAG,"initialize()");
@@ -62,6 +117,7 @@ public class AdvistorWindow {
             mADVISTORFrameLayout.addView(mADVISTORView);
             mWindowManager.addView(mADVISTORFrameLayout, mParams);
             //setTextMessage("藍芽狀態");
+            mHandler.postDelayed(flipup, 5000);
         } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(mContext,"initialize error!",Toast.LENGTH_SHORT);
@@ -125,6 +181,5 @@ public class AdvistorWindow {
         }
         return;
     }
-
 
 }

@@ -41,7 +41,18 @@
     <string name="title_connecting">藍芽連結中</string>
     <string name="title_not_connected">藍芽未連結</string>
 
-    <string name="title_advistor_text1">大躍行銷</string>
-    <string name="title_advistor_text2">購狂登場</string>
+    <string name="title_advistor_text_tpp">賀</string>
+    <string name="title_advistor_text_bottom">加入貓店行列</string>
+    <string name="title_advistor_text1">重慶外婆</string>
+    <string name="title_advistor_text2">綠動能健康生活館</string>
+    <string name="title_advistor_text3">茶媽媽</string>
+    <string name="title_advistor_text4">可小孩新式飲品餐飲</string>
+    <string name="title_advistor_text5">髮寶頭皮護理桃園旗艦店</string>
+    <string name="title_advistor_text6">我的樂活生活館新莊旗艦店</string>
+    <string name="title_advistor_text7">阿芳滷肉飯</string>
+    <string name="title_advistor_text8">高朋海鮮平價快炒</string>
+    <string name="title_advistor_text9">好來屋餐飲</string>
+    <string name="title_advistor_text10">桐鼎勝味丼</string>
+
     <string name="todo">TODO</string>
 </resources>

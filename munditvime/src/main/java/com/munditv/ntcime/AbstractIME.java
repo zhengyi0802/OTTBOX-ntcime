@@ -77,9 +77,10 @@ public abstract class AbstractIME extends InputMethodService implements
       packageInfo = getPackageManager().getPackageInfo("com.munditv.tvservice",
               PackageManager.GET_SERVICES);
       if(packageInfo != null) {
-        Intent mIntent = new Intent(Intent.ACTION_MAIN);
+        Intent mIntent = new Intent();
         mIntent.setClassName("com.munditv.tvservice",
                 "com.mundirv.tvservice.TVService");
+        mIntent.setAction("com.munditv.tvservice.ACTION_START_SERVICE");
         startService(mIntent);
         Toast.makeText(this,R.string.toast_text_tvservice_start,Toast.LENGTH_SHORT).show();
       } else {
