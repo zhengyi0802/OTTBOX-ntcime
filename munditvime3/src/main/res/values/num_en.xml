@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alternative_2">abc</string>
+    <string name="alternative_3">def</string>
+    <string name="alternative_4">ghi</string>
+    <string name="alternative_5">jkl</string>
+    <string name="alternative_6">mno</string>
+    <string name="alternative_7">pqrs</string>
+    <string name="alternative_8">tuv</string>
+    <string name="alternative_9">wxyz</string>
+</resources>

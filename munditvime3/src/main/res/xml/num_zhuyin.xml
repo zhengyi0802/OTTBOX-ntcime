@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2010 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="@dimen/key_height"
+    >
+
+    <Row>
+        <Key android:codes="-200" android:keyLabel="@string/label_english_number" android:keyEdgeFlags="left" />
+        <Key android:codes="10" android:keyIcon="@drawable/enter_icon"
+            android:iconPreview="@drawable/enter_popup_icon"
+            android:isRepeatable="true"/>
+        <Key android:codes="4" android:keyLabel="@string/label_back" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="12549,12550,12551,12552" android:keyLabel="1" android:popupCharacters="@string/alternative_zhuyin_1" android:keyEdgeFlags="left" />
+        <Key android:codes="12553,12554,12555,12556" android:keyLabel="2" android:popupCharacters="@string/alternative_zhuyin_2" />
+        <Key android:codes="12557,12558,12559" android:keyLabel="3" android:popupCharacters="@string/alternative_zhuyin_3" android:keyEdgeFlags="right" />
+    </Row>
+
+    <Row>
+        <Key android:codes="12560,12561,12562" android:keyLabel="4" android:popupCharacters="@string/alternative_zhuyin_4" android:keyEdgeFlags="left" />
+        <Key android:codes="12563,12564,12565,12566" android:keyLabel="5" android:popupCharacters="@string/alternative_zhuyin_5" />
+        <Key android:codes="12567,12568,12569" android:keyLabel="6" android:popupCharacters="@string/alternative_zhuyin_6" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="12570,12571,12572,12573" android:keyLabel="7" android:popupCharacters="@string/alternative_zhuyin_7" android:keyEdgeFlags="left" />
+        <Key android:codes="12574,12575,12576,12577" android:keyLabel="8" android:popupCharacters="@string/alternative_zhuyin_8" />
+        <Key android:codes="12578,12579,12580,12581,12582" android:keyLabel="9" android:popupCharacters="@string/alternative_zhuyin_9" android:keyEdgeFlags="right" />
+    </Row>
+
+    <Row>
+        <Key android:codes="714,711,715,729" android:keyLabel="@string/label_help" android:popupCharacters="@string/alternative_zhuyin_star" android:keyEdgeFlags="left"/>
+        <Key android:codes="12583,12584,12585" android:keyLabel="0" android:popupCharacters="@string/alternative_zhuyin_0" />
+        <Key android:codes="-5" android:keyIcon="@drawable/delete_icon"
+            android:iconPreview="@drawable/delete_popup_icon"
+            android:isRepeatable="true" android:keyEdgeFlags="right"/>
+    </Row>
+
+</Keyboard>
