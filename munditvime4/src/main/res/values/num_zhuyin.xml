@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alternative_zhuyin_1">ㄅㄆㄇㄈ</string>
+    <string name="alternative_zhuyin_2">ㄉㄊㄋㄌ</string>
+    <string name="alternative_zhuyin_3">ㄍㄎㄏ</string>
+    <string name="alternative_zhuyin_4">ㄐㄑㄒ</string>
+    <string name="alternative_zhuyin_5">ㄓㄔㄕㄖ</string>
+    <string name="alternative_zhuyin_6">ㄗㄘㄙ</string>
+    <string name="alternative_zhuyin_7">ㄚㄛㄜㄝ</string>
+    <string name="alternative_zhuyin_8">ㄞㄟㄠㄡ</string>
+    <string name="alternative_zhuyin_9">ㄢㄣㄤㄥㄦ</string>
+    <string name="alternative_zhuyin_0">ㄧㄨㄩ</string>
+    <string name="alternative_zhuyin_star">ˊˇˋ˙</string>
+</resources>

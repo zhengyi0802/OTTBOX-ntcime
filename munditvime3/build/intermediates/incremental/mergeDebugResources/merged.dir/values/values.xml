@@ -49,7 +49,7 @@
     <string name="alternative_zhuyin_8">ㄞㄟㄠㄡ</string>
     <string name="alternative_zhuyin_9">ㄢㄣㄤㄥㄦ</string>
     <string name="alternative_zhuyin_star">ˊˇˋ˙</string>
-    <string name="ime_name">老人機輸入法</string>
+    <string name="ime_name">快訊</string>
     <string name="label_back">返回</string>
     <string name="label_chinese">中文</string>
     <string name="label_english">英文</string>
@@ -67,7 +67,7 @@
     <string name="title_connecting">藍芽連結中</string>
     <string name="title_not_connected">藍芽未連結</string>
     <string name="todo">TODO</string>
-    <string name="zhuyin_ime_name">老人機輸入法</string>
+    <string name="zhuyin_ime_name">快訊</string>
     <style name="KeyboardKeyOverlay">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">#FFAAAAAA</item>

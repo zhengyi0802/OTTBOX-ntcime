@@ -1,4 +1,0 @@
-#Thu Jun 18 17:30:47 CST 2020
-base.0=/work/Workspace/Android/ottapp/OTTBOX-ntcime/munditvime3/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
