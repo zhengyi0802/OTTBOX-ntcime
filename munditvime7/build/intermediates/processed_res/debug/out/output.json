@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.munditv.ntcime",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "PROCESSED_RES"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 113,
+        "versionName": "0.9.5.10.9",
+        "outputFile": "munditvime7-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "resources-debug.ap_",
+      "properties": {
+        "packageId": "com.munditv.ntcime",
+        "split": "",
+        "minSdkVersion": "19"
+      }
+    }
+  ]
+}

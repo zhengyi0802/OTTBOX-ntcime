@@ -1,0 +1,4 @@
+#Mon Aug 31 10:22:55 CST 2020
+base.0=/work/Workspace/Android/ottapp/ntcime/munditvime7/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

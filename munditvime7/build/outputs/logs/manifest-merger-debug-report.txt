@@ -1,0 +1,91 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:20:1-46:12
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:20:1-46:12
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:20:1-46:12
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:20:1-46:12
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:20:1-46:12
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:20:1-46:12
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:20:1-46:12
+	package
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:21:9-37
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:23:9-34
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:20:11-69
+	android:versionCode
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:22:9-34
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+uses-permission#android.permission.VIBRATE
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:25:5-65
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:25:22-63
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:26:5-73
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:26:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:27:5-67
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:27:22-65
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:28:5-78
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:28:22-75
+application
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:30:5-45:19
+	android:label
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:30:18-50
+	android:icon
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:30:51-80
+service#com.munditv.ntcime.ZhuyinIME
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:32:9-38:19
+	android:label
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:32:43-82
+	android:permission
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:33:17-74
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:32:18-42
+intent-filter#action:name:android.view.InputMethod
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:34:13-36:29
+action#android.view.InputMethod
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:35:17-67
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:35:25-64
+meta-data#android.view.im
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:37:13-88
+	android:resource
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:37:55-85
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:37:24-54
+activity#com.munditv.ntcime.ImePreferenceActivity
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:40:9-44:20
+	android:label
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:40:56-88
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:40:19-55
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:41:13-43:29
+action#android.intent.action.MAIN
+ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:42:17-68
+	android:name
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml:42:25-66
+uses-sdk
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+		ADDED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
+		INJECTED from /work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/AndroidManifest.xml
