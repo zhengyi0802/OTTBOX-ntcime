@@ -33,8 +33,7 @@
     <application
         android:debuggable="true"
         android:icon="@drawable/icon"
-        android:label="@string/ime_name"
-        android:testOnly="true" >
+        android:label="@string/ime_name" >
         <service
             android:name="com.munditv.ntcime.ZhuyinIME"
             android:label="@string/zhuyin_ime_name"

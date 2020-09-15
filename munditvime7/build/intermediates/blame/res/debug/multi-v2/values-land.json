@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/work/Workspace/Android/ottapp/ntcime/munditvime7/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/work/Workspace/Android/ottapp/OTTBOX-ntcime/munditvime7/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/work/Workspace/Android/ottapp/ntcime/munditvime7/src/main/res/values-land/dimens.xml",
+                    "source": "/work/Workspace/Android/ottapp/OTTBOX-ntcime/munditvime7/src/main/res/values-land/dimens.xml",
                     "from": {
                         "startLines": "20,21,22",
                         "startColumns": "4,4,4",

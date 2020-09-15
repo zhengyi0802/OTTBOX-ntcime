@@ -19,8 +19,8 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Titles for IME  -->
-    <string name="ime_name">全國電子</string>
-    <string name="zhuyin_ime_name">全國電子</string>
+    <string name="ime_name">館長來訊</string>
+    <string name="zhuyin_ime_name">館長來訊</string>
 
     <!-- Labels on soft keys -->
     <string name="label_english">英文</string>
@@ -42,13 +42,7 @@
     <string name="title_not_connected">藍芽未連結</string>
 
     <string name="title_advistor_text_tpp">賀</string>
-    <string name="title_advistor_text_bottom">MyWay来訊</string>
+    <string name="title_advistor_text_bottom">館長來訊</string>
 
     <string name="todo">TODO</string>
-    <string name="talk_content_1">Hi，我在</string>
-    <string name="talk_content_2">買家電、買3C、買電腦、要比價、要揪團團購、要客服、要問產品使用，都可以找我喔。</string>
-    <string name="talk_content_3">對不起，您的問題太深奧，請您提供使用坪數大小？有無品牌偏好？及預算多少？</string>
-    <string name="talk_content_4">搜索中，請稍候……</string>
-    <string name="talk_content_5">我建議您選購東元MA63IC-GA1這款，最符合您的要求，現在請冷氣先生為您說明。</string>
-    <string name="talk_content_6">祝您順心愉快，期待下次再為您服務，Bye-bye。</string>
 </resources>

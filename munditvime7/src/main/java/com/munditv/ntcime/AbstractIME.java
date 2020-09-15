@@ -111,7 +111,6 @@ public abstract class AbstractIME extends InputMethodService implements
 
   public void initiatePopupWindow()
   {
-    Log.d("AbstractIME", "init");
     isBTStatusShow = true;
     if (hasAdvistor) {
       mAdvistorWindow = new AdvistorWindow(this);
@@ -257,7 +256,7 @@ public abstract class AbstractIME extends InputMethodService implements
   @Override
   public boolean onKeyDown(int keyCode, KeyEvent event) {
     Log.d("AbstractIME ", "onKeyDown() keyCode = " + Integer.toString(keyCode));
-    if (keyCode == 165 || keyCode == 73 || keyCode == 75) {
+    if (keyCode == 165 || keyCode == 73) {
         if(!isBTStatusShow) {
           isBTStatusShow = true;
         } else {
@@ -277,6 +276,13 @@ public abstract class AbstractIME extends InputMethodService implements
       if ((inputView != null) && inputView.handleBack()) {
         return true;
       }
+    }
+
+    if (keyCode ==75) {
+      if (hasAdvistor) {
+        mAdvistorWindow.switchContext();
+      }
+      return true;
     }
 
     if (keyCode == 82) {
