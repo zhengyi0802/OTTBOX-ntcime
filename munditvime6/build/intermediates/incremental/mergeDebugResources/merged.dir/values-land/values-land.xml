@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="key_height">70dip</dimen>
-    <dimen name="key_height_bottom_row">48dip</dimen>
-    <dimen name="key_height_zhuyin">38dip</dimen>
-</resources>

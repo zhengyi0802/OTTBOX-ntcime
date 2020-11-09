@@ -33,8 +33,6 @@ import android.view.inputmethod.InputConnection;
 import android.widget.Toast;
 
 import com.munditv.ntcime.advistor.AdvistorWindow;
-import com.munditv.ntcime.btrfcomm.BluetoothChatService;
-import com.munditv.ntcime.btrfcomm.Constants;
 
 /**
  * Abstract class extended by ZhuyinIME
@@ -61,10 +59,6 @@ public abstract class AbstractIME extends InputMethodService implements
 
   private BluetoothAdapter mBluetoothAdapter = null;
   private String mConnectedDeviceName = null;
-  private BluetoothChatService mChatService = null;
-  private boolean isBTRFComm = false;
-  private String readMessage;
-  private String mStatusString;
 
   private Handler mHandler = new Handler();
 
@@ -86,15 +80,11 @@ public abstract class AbstractIME extends InputMethodService implements
     orientation = getResources().getConfiguration().orientation;
     // Use the following line to debug IME service.
     //android.os.Debug.waitForDebugger()
-    isBTRFComm = initializeBTComm();
     initiatePopupWindow();
-    mHandler.postDelayed(initBT,1000);;
   }
 
   @Override
   public void onDestroy() {
-    closeBTComm();
-
     super.onDestroy();
   }
 
@@ -117,19 +107,6 @@ public abstract class AbstractIME extends InputMethodService implements
       isAdvistorShow = true;
     }
   }
-
-  final Runnable initBT = new Runnable() {
-    @Override
-    public void run() {
-
-      if(isBTRFComm) {
-        mChatService.start();
-        Toast.makeText(mContext, "藍芽手機輸入", Toast.LENGTH_LONG).show();
-      } else {
-        Toast.makeText(mContext, "無法使用藍芽輸入", Toast.LENGTH_LONG).show();
-      }
-    }
-  };
 
   @Override
   public void onUpdateSelection(int oldSelStart, int oldSelEnd, int newSelStart,
@@ -572,79 +549,5 @@ public abstract class AbstractIME extends InputMethodService implements
   public void swipeUp() {
 
   }
-
-  private boolean initializeBTComm() {
-    mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-    if (mBluetoothAdapter == null) {
-      return false;
-    }
-    if (!mBluetoothAdapter.isEnabled()) {
-      //mBluetoothAdapter.enable();
-      // Otherwise, setup the chat session
-      Toast.makeText(this, "藍芽未開啟", Toast.LENGTH_LONG).show();
-      isBTStatusShow = true;
-    }
-    if (mChatService == null) {
-      mChatService = new BluetoothChatService(mContext, mBTHandler);
-    }
-    return true;
-  }
-
-  public boolean closeBTComm() {
-    if (mChatService != null) {
-      mChatService.stop();
-    }
-    return true;
-  }
-
-  private void setStatus(CharSequence subTitle) {
-    mStatusString = subTitle.toString();
-    isBTStatusShow = true;
-    Toast.makeText(this,mStatusString,Toast.LENGTH_SHORT);
-  }
-
-  private final Handler mBTHandler = new Handler() {
-    @Override
-    public void handleMessage(Message msg) {
-      switch (msg.what) {
-        case Constants.MESSAGE_STATE_CHANGE:
-          switch (msg.arg1) {
-            case BluetoothChatService.STATE_CONNECTED:
-              setStatus(mContext.getString(R.string.title_connected_to) + mConnectedDeviceName);
-              break;
-            case BluetoothChatService.STATE_CONNECTING:
-              setStatus(mContext.getString(R.string.title_connecting));
-              break;
-            case BluetoothChatService.STATE_LISTEN:
-            case BluetoothChatService.STATE_NONE:
-              setStatus(mContext.getString(R.string.title_not_connected));
-              break;
-          }
-          candidatesContainer.displayBlueRFComm(mStatusString);
-          break;
-        case Constants.MESSAGE_WRITE:
-          byte[] writeBuf = (byte[]) msg.obj;
-          // construct a string from the buffer
-          String writeMessage = new String(writeBuf);
-          //mConversationArrayAdapter.add("Me:  " + writeMessage);
-          break;
-        case Constants.MESSAGE_READ:
-          byte[] readBuf = (byte[]) msg.obj;
-          // construct a string from the valid bytes in the buffer
-          readMessage = new String(readBuf, 0, msg.arg1);
-          //mConversationArrayAdapter.add(mConnectedDeviceName + ":  " + readMessage);
-          clearCandidates();
-          commitText(readMessage);
-          break;
-        case Constants.MESSAGE_DEVICE_NAME:
-          // save the connected device's name
-          mConnectedDeviceName = msg.getData().getString(Constants.DEVICE_NAME);
-          break;
-        case Constants.MESSAGE_TOAST:
-          break;
-      }
-    }
-
-  };
 
 }

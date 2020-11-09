@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.munditv.ntcime",
+  "variantName": "processDebugResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 113,
+      "versionName": "0.9.5.10.9",
+      "outputFile": "munditvime8-debug.apk"
+    }
+  ]
+}
